@@ -3,12 +3,12 @@ App\Entity\User:
     name: 'Sponge'
     firstName: 'bob'
     email: 'spongebob@email.com'
-    password: '123'
+    plainPassword: '123'
   user{1..20}:
     name: <lastName()>
     firstName: <firstName()>
     email: <email()>
-    password: '123'
+    plainPassword: '123'
 
 App\Entity\Post:
   post{1..500}:
