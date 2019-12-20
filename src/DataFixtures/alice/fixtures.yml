@@ -9,3 +9,10 @@ App\Entity\User:
     firstName: <firstName()>
     email: <email()>
     password: '123'
+
+App\Entity\Post:
+  post{1..500}:
+    title: <sentence(6, true)>
+    postContent: <paragraphs(3, true)>
+    createdAt: <dateTimeThisYear('now')>
+    author: '@user*'
